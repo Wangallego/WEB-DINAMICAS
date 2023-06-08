@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown"><a href="#" onclick="desplegar()">Juegos</a>
+                    <ul class="dropdown-content" id="desplegable">
+                        <li><a href="#" for="accion" onclick="opciones()">Accion</a>
+                            <ul id="accion" class="accion">
+                                <li><a href="#">Game1</a></li>
+                                <li><a href="#">Game2</a></li>
+                                <li><a href="#">Game3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="opciones()">Aventuras</a>
+                            <ul id="accion" class="accion">
+                                <li><a href="#">Game1</a></li>
+                                <li><a href="#">Game2</a></li>
+                                <li><a href="#">Game3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="opciones()">Indie</a>
+                            <ul id="accion" class="accion">
+                                <li><a href="#">Game1</a></li>
+                                <li><a href="#">Game2</a></li>
+                                <li><a href="#">Game3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <div>
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <div>
+                <input type="text" class="search ">
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="container-text">
+                <h1>
+                    LOREM
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui quo veniam, laudantium dicta
+                    porro consequatur dolores numquam labore sint quam consectetur saepe ipsam maxime dolorem aspernatur
+                    eum cupiditate hic.
+                </p>
+                <span class="hideText" id="hideText">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis labore unde eligendi, quasi
+                        ad nihil perferendis, perspiciatis provident sapiente doloribus rem illum quas facilis excepturi
+                        aliquam impedit! Quae, aperiam.</p>
+                </span>
+
+                <button class="read-more-btn" id="hideText_btn" onclick="mostrarOcultar()">Mostrar Más</button>
+            </div>
+
+
+
+            <!-- <div class="container-text">
+                <h1>
+                    LOREM
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui quo veniam, laudantium dicta
+                    porro consequatur dolores numquam labore sint quam consectetur saepe ipsam maxime dolorem aspernatur
+                    eum cupiditate hic.
+                </p>
+            </div>
+       
+        
+            <div class="container-text">
+                <h1>
+                    LOREM
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui quo veniam, laudantium dicta
+                    porro consequatur dolores numquam labore sint quam consectetur saepe ipsam maxime dolorem aspernatur
+                    eum cupiditate hic.
+                </p>
+            </div>
+            <div class="container-text">
+                <h1>
+                    LOREM
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui quo veniam, laudantium dicta
+                    porro consequatur dolores numquam labore sint quam consectetur saepe ipsam maxime dolorem aspernatur
+                    eum cupiditate hic.
+                </p>
+            </div> -->
+        </div>
+
+    </section>
+    <script src="mostrar+.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

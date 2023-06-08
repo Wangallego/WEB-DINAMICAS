@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+</head>
+
+<body>
+
+
+    <!--Formulario tipico para usuario-->
+    <div class="container-all">
+        <form  id="form" action="#" name="login" method="get" enctype="multipart/form-data" class="flex-container" onsubmit="comprobar(event)">
+            <!--Imagen Logo-->
+            <div class="container-logo">
+                <img src="img/logo.png" alt="Logotipo" class="logo">
+            </div>
+            <!--Estructura login-->
+            <div class="container-login">
+
+                <label for="" class="type-user"> Nombre</label>
+                <input id="name" type="text" name="user" class="caja" placeholder="Escriba su nombre aqui..."> 
+                <br>
+                <label for="" class="type-user"> Apellido</label>
+                <input id="apellido" type="text" name="user-login" class="caja" placeholder="Escriba su usuario aqui...">
+                <br>
+                <label class="type-user"> Mail </label>
+                <input id="email" name="email" type="email" class="caja" placeholder="Escriba su mail..." >
+                <label for="telefono" class="type-user">Número de teléfono</label>
+                <input id="telefono" name="telefono" type="tel" class="caja" placeholder="Escriba su número de teléfono..." >
+                
+                <label for="dni" class="type-user">DNI</label>
+                <input id="dni" name="dni" type="text" class="caja" placeholder="Escriba su DNI..." >
+                <br>
+            </div>
+            <!--Botones-->
+            <div class="container-buttom">
+
+                <input type="submit" value="Enviar" class="caja1">
+                <input type="reset" value="Limpiar" class="caja1"><br>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="comprobar-formulario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+
+</html>
